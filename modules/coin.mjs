@@ -94,8 +94,6 @@ function flipACoin(call) {
   return obj
 }
 
-console.log(flipACoin('heads'))
-
 /** Export 
  * 
  * Export all of your named functions
