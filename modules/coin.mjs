@@ -42,6 +42,9 @@ console.log(coinFlip())
  */
 
 function coinFlips(flips) {
+  if(flips == 0){
+    return coinFlip()
+  }
   const arr = []
   for(let i = 0; i < flips; i++){
     arr[i] = coinFlip()
