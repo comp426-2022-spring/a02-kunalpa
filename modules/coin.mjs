@@ -15,12 +15,13 @@
  */
 
 function coinFlip() {
-  if(Math.random < 0.5){
+  if(Math.random() < 0.5){
     return 'heads'
   }
   return 'tails'
 }
 
+console.log(coinFlip())
 /** Multiple coin flips
  * 
  * Write a function that accepts one parameter (number of flips) and returns an array of 
