@@ -41,9 +41,6 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  if(flips == null){
-    return coinFlip()
-  }
   const arr = []
   for(let i = 0; i < flips; i++){
     arr[i] = coinFlip()
@@ -65,19 +62,26 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  const obj = {heads: 0, tails: 0}
+  headNums = 0
+  tailNums = 0
   for(let i = 0; i < array.length; i ++){
     if(array[i] == 'heads'){
-      obj.heads ++
+      headNums ++
     }
     else if(array[i] == 'tails'){
-      obj.tails ++
+      tailNums ++
     }
     else{
       return "Invalid array"
     }
   }
-  return obj
+  if(headNums == 0){
+    return { tails: tailNums }
+  }
+  else if (tailNums == 0){
+    return { heads: headNums}
+  }
+  return {heads: headNums, tails: tailNums }
 }
 
 /** Flip a coin!
