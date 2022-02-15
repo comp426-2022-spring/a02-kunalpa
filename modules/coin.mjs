@@ -50,7 +50,6 @@ function coinFlips(flips) {
   }
   return arr;
 }
-console.log(coinFlips())
 
 /** Count multiple flips
  * 
