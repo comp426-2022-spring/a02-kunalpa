@@ -21,7 +21,6 @@ function coinFlip() {
   return 'tails'
 }
 
-console.log(coinFlip())
 /** Multiple coin flips
  * 
  * Write a function that accepts one parameter (number of flips) and returns an array of 
@@ -42,7 +41,7 @@ console.log(coinFlip())
  */
 
 function coinFlips(flips) {
-  if(flips == 0){
+  if(flips == null){
     return coinFlip()
   }
   const arr = []
@@ -51,6 +50,7 @@ function coinFlips(flips) {
   }
   return arr;
 }
+console.log(coinFlips())
 
 /** Count multiple flips
  * 
